@@ -15,7 +15,7 @@ class IrMailServer(osv.Model):
         """ Send blind carbon copy to message originator
         """
         user = self.pool.get('res.users').browse(cr, uid, uid, context=context)
-        if user.notification_receive_copy:
+        if user.partner_id.notification_receive_copy:
             bcc_list = extract_rfc2822_addresses(message['Bcc'])
             bcc = user.email or '%s@%s' % (user.alias_name, user.alias_domain) if user.alias_domain else None
             if bcc:

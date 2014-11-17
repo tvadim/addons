@@ -1,12 +1,12 @@
 {
-    'name': 'Send BCC',
-    'version': '0.1',
+    'name': 'Send Bcc',
+    'version': '0.2',
     'category': 'Social Network',
-    'summary': 'Send BCC to message originator',
+    'summary': 'Send Bcc to message originator',
     'description': """
 Send BCC to message originator
 ==============================
-Override default behaviour when sending email to partners: send a blind carbon copy to the message originator.
+Override default behaviour when sending email: send a blind carbon copy to the message originator.
     """,
     'author': 'Vadim <vadim@based.at>',
     'website': 'http://based.at',
