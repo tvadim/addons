@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <record  model="ir.ui.view" id="view_group_form">
+            <field name="name">mail.group.form</field>
+            <field name="model">mail.group</field>
+            <field name="inherit_id" ref="mail.view_group_form"/>
+            <field name="arch" type="xml">
+                <field name="group_ids" position="after">
+                    <field name="suppress_oof"/>
+                </field>
+            </field>
+        </record>
+    </data>
+</openerp>
